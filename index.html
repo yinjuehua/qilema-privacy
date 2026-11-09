@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>齐了吗隐私说明</title>
+<title>齐了吗隐私说明 · ReadyGo Privacy Policy</title>
 <style>
   :root { --text: #1f2a2e; --muted: #5d6b70; --accent: #1f6b5c; --bg: #fbfaf7; --line: #e4e1d9; }
   @media (prefers-color-scheme: dark) {
@@ -11,9 +11,15 @@
   }
   body { margin: 0; background: var(--bg); color: var(--text);
          font: 17px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif; }
-  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
-  h1 { font-size: 28px; margin: 0 0 4px; }
+  main { max-width: 680px; margin: 0 auto; padding: 24px 16px 64px; }
+  nav { display: flex; justify-content: flex-end; gap: 12px; font-size: 15px; }
+  nav a { color: var(--accent); text-decoration: none; padding: 4px 2px; }
+  nav a[aria-current="true"] { color: var(--text); font-weight: 600; }
+  section + section { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); }
+  .one-language section + section { margin-top: 0; padding-top: 0; border-top: 0; }
+  h1 { font-size: 28px; margin: 16px 0 4px; }
   h2 { font-size: 19px; margin: 32px 0 8px; color: var(--accent); }
+  a { color: var(--accent); }
   .date { color: var(--muted); font-size: 15px; margin: 0 0 24px; }
   ul { padding-left: 20px; margin: 0; }
   li { margin: 6px 0; }
@@ -22,48 +28,132 @@
 </head>
 <body>
 <main>
-  <h1>齐了吗隐私说明</h1>
-  <p class="date">更新日期：2026 年 11 月 9 日</p>
+  <nav aria-label="Language">
+    <a href="#zh" data-lang="zh" lang="zh-Hans">中文</a>
+    <a href="#en" data-lang="en" lang="en">English</a>
+  </nav>
 
-  <h2>会保存哪些信息</h2>
-  <ul>
-    <li>清单内容：你建的清单、物品，以及物品的位置、备注、分组、负责人和是谁的。</li>
-    <li>勾选记录：每天勾了哪些，以及是谁勾的。</li>
-    <li>称呼：你在设置里填的称呼。</li>
-    <li>账号：首次打开时自动建立的匿名账号编号。选择 Apple 登录时只读取名字用来填称呼，不读取邮箱。</li>
-    <li>家庭和设备：家庭编号、邀请码，以及你绑定的显示屏幕（比如 Fire 相框）的编号。</li>
-  </ul>
+  <section id="zh" lang="zh-Hans">
+    <h1>齐了吗隐私说明</h1>
+    <p class="date">更新日期：2026 年 11 月 9 日</p>
 
-  <h2>存在哪里，谁能看到</h2>
-  <ul>
-    <li>存在你的手机上，以及 Google Firebase（Cloud Firestore）上，用来和家人同步。</li>
-    <li>只有你家庭的成员和你绑定的显示屏幕能读取你家庭的清单和勾选。</li>
-    <li>出门前提醒、桌面小组件、使用习惯排序只在你的手机上计算和保存。</li>
-  </ul>
+    <h2>会保存哪些信息</h2>
+    <ul>
+      <li>清单内容：你建的清单、物品，以及物品的位置、备注、分组、负责人和是谁的。</li>
+      <li>勾选记录：每天勾了哪些，以及是谁勾的。</li>
+      <li>称呼：你在设置里填的称呼。</li>
+      <li>账号：首次打开时自动建立的匿名账号编号。选择 Apple 登录时只读取名字用来填称呼，不读取邮箱。</li>
+      <li>家庭和设备：家庭编号、邀请码，以及你绑定的显示屏幕（比如 Fire 相框）的编号。</li>
+    </ul>
 
-  <h2>不会做的事</h2>
-  <ul>
-    <li>不投放广告，不做分析统计，不追踪你在其他 app 或网站上的行为。</li>
-    <li>不出售你的数据，也不分享给第三方，同步用的 Google Firebase 除外。</li>
-  </ul>
+    <h2>存在哪里，谁能看到</h2>
+    <ul>
+      <li>存在你的手机上，以及 Google Firebase（Cloud Firestore）上，用来和家人同步。</li>
+      <li>只有你家庭的成员和你绑定的显示屏幕能读取你家庭的清单和勾选。</li>
+      <li>出门前提醒、桌面小组件、使用习惯排序只在你的手机上计算和保存。</li>
+    </ul>
 
-  <h2>分享和导出</h2>
-  <ul>
-    <li>你可以把清单以文字或文件分享给别人。文件只包含清单内容，不包含勾选记录和家庭信息。</li>
-  </ul>
+    <h2>不会做的事</h2>
+    <ul>
+      <li>不投放广告，不做分析统计，不追踪你在其他 app 或网站上的行为。</li>
+      <li>不出售你的数据，也不分享给第三方，同步用的 Google Firebase 除外。</li>
+    </ul>
 
-  <h2>删除</h2>
-  <ul>
-    <li>随时可以在 App 的「设置 → 账号 → 删除账号和数据」删除。</li>
-    <li>家里还有别人时，共用的清单和勾选记录留给家人；只有你一个人时，家庭数据会一起删除。删除后不能恢复。</li>
-  </ul>
+    <h2>分享和导出</h2>
+    <ul>
+      <li>你可以把清单以文字或文件分享给别人。文件只包含清单内容，不包含勾选记录和家庭信息。</li>
+    </ul>
 
-  <h2>联系我们</h2>
-  <ul>
-    <li>邮箱：<a href="mailto:hello@newplusretail.com">hello@newplusretail.com</a></li>
-  </ul>
+    <h2>删除</h2>
+    <ul>
+      <li>随时可以在 App 的「设置 → 账号 → 删除账号和数据」删除。</li>
+      <li>家里还有别人时，共用的清单和勾选记录留给家人；只有你一个人时，家庭数据会一起删除。删除后不能恢复。</li>
+    </ul>
 
-  <footer>这份说明和 App 内「设置 → 账号 → 隐私说明」的内容一致。</footer>
+    <h2>联系我们</h2>
+    <ul>
+      <li>邮箱：<a href="mailto:hello@newplusretail.com">hello@newplusretail.com</a></li>
+    </ul>
+
+    <footer>这份说明和 App 内「设置 → 账号 → 隐私说明」的内容一致。</footer>
+  </section>
+
+  <section id="en" lang="en">
+    <h1>ReadyGo Privacy Policy</h1>
+    <p class="date">Updated November 9, 2026</p>
+
+    <h2>What we store</h2>
+    <ul>
+      <li>List contents: the lists and items you create, with each item's location, note, group, who's responsible and whose it is.</li>
+      <li>Check history: what was checked each day, and by whom.</li>
+      <li>Name: the name you set in Settings.</li>
+      <li>Account: an anonymous account ID created the first time you open the app. If you sign in with Apple, we only read your name to fill in your display name, never your email.</li>
+      <li>Family and devices: your family ID, invite code, and the IDs of screens you connect (such as a Fire frame).</li>
+    </ul>
+
+    <h2>Where it's stored and who can see it</h2>
+    <ul>
+      <li>On your phone, and in Google Firebase (Cloud Firestore) to sync with your family.</li>
+      <li>Only members of your family and the screens you connect can read your family's lists and checks.</li>
+      <li>Reminders, widgets and habit-based sorting are worked out and stored on your phone only.</li>
+    </ul>
+
+    <h2>What we never do</h2>
+    <ul>
+      <li>No ads, no analytics, and no tracking across other apps or websites.</li>
+      <li>We don't sell your data or share it with anyone, apart from Google Firebase, which we use for syncing.</li>
+    </ul>
+
+    <h2>Sharing and export</h2>
+    <ul>
+      <li>You can share a list as text or as a file. Files contain only the list, without check history or family details.</li>
+    </ul>
+
+    <h2>Delete</h2>
+    <ul>
+      <li>You can delete everything anytime in the app under Settings → Account → Delete account and data.</li>
+      <li>If others are still in the family, shared lists and check history stay with them; if you're the only one, the family's data is deleted too. This can't be undone.</li>
+    </ul>
+
+    <h2>Contact us</h2>
+    <ul>
+      <li>Email: <a href="mailto:hello@newplusretail.com">hello@newplusretail.com</a></li>
+    </ul>
+
+    <footer>This matches Settings → Account → Privacy in the app.</footer>
+  </section>
 </main>
+<script>
+  // Shows one language: #zh or #en in the address wins, then the browser language.
+  // Without JavaScript both languages show, one after the other.
+  (function () {
+    var links = document.querySelectorAll("nav a[data-lang]");
+    function show(lang) {
+      document.body.classList.add("one-language");
+      document.getElementById("zh").hidden = lang !== "zh";
+      document.getElementById("en").hidden = lang !== "en";
+      document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+      for (var i = 0; i < links.length; i++) {
+        links[i].setAttribute("aria-current", links[i].getAttribute("data-lang") === lang ? "true" : "false");
+      }
+    }
+    function fromHash() {
+      var hash = location.hash.replace("#", "");
+      return hash === "zh" || hash === "en" ? hash : null;
+    }
+    var browser = (navigator.language || "").toLowerCase().indexOf("zh") === 0 ? "zh" : "en";
+    show(fromHash() || browser);
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", function (event) {
+        var lang = this.getAttribute("data-lang");
+        event.preventDefault();
+        show(lang);
+        try { history.replaceState(null, "", "#" + lang); } catch (e) {}
+        window.scrollTo(0, 0);
+      });
+    }
+    window.addEventListener("hashchange", function () { show(fromHash() || browser); });
+  })();
+</script>
 </body>
 </html>
